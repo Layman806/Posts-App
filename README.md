@@ -20,7 +20,7 @@ bin/rails db:migrate
 bin/dev
 ```
 
-### NOTE: The server is runs at port 5000
+### NOTE: The server runs at port 5000
 `localhost:5000`
 
 `bin/dev`  will automatically install the `overmind` gem for you and will run both the karafa server and the rails server. You can see the consumed messages in the terminal, as consumed by the PostsConsumer.
