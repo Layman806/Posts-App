@@ -1,0 +1,6 @@
+<%= turbo_stream.append "posts_frame", @post %>
+<%= turbo_stream.replace "new_post_frame" do %>
+  <div>
+    <%= link_to "New Post", new_post_path, data: { turbo_frame: "new_post_frame" } %>
+  </div>
+<% end %>

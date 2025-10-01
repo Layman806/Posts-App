@@ -1,0 +1,14 @@
+<turbo-frame id="new_post_frame">
+  <%= form_with model: @post, data: { turbo_frame: '_top' } do |f| %>
+    <div>
+      <%= f.label "Title" %>
+      <%= f.text_field :title %>
+    </div>
+    <div>
+      <%= f.label "Description" %>
+      <%= f.text_area :dscr %>
+    </div>
+    <%= f.submit "Create Post" %>
+  <% end %>
+  <%= link_to "Close", posts_path, data: { turbo: "_top"} %>
+</turbo-frame>
